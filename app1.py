@@ -6,7 +6,6 @@ import matplotlib.pyplot as plt
 import time
 
 st.set_page_config(page_title="Geneix", page_icon=":lock_with_ink_pen:", layout="wide")
-st.set_option('deprecation.showPyplotGlobalUse', False)
 def main():
 
     st.title("🔐 Geneix Image Security")
@@ -83,18 +82,18 @@ def main():
 
                  original_img = Image.open(img_file).convert("RGB")
 
-    col1, col2, col3 = st.columns(3)
+                 col1, col2, col3 = st.columns(3)
 
-    with col1:
-        st.image(original_img, caption="Original Image", use_container_width=True)
-
-    with col2:
-        st.image(encrypted_img.astype(np.uint8), caption="Encrypted Image", use_container_width=True)
-
-    with col3:
-        st.image(decrypted_img.astype(np.uint8), caption="Decrypted Image", use_container_width=True)
-        
-    st.divider()
+                 with col1:
+                     st.image(original_img, caption="Original Image")
+                     
+                 with col2:
+                    st.image(encrypted_img.astype(np.uint8), caption="Encrypted Image")
+ 
+                 with col3:
+                    st.image(decrypted_img.astype(np.uint8), caption="Decrypted Image")
+                    
+                 st.divider()
 
 def sha_256(image):
     # Convert to numpy array and then to 8-bit binary
@@ -482,3 +481,5 @@ def decryption_function(image,encrypted_matrix,rna_translation_matrix):
 
 if __name__ == "__main__":
     main()
+    
+  
