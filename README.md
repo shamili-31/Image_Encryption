@@ -1,149 +1,167 @@
-🔐 Geneix – DNA-RNA Based Image Encryption System
-Geneix is a bio-inspired image security application that uses DNA and RNA computing principles combined with chaotic cryptographic techniques to securely encrypt and decrypt digital images.
+# 🔐 Geneix – DNA–RNA Based Image Encryption System
 
-The system converts image pixel data into DNA sequences, applies RNA mutation and translation operations, and generates a highly secure encrypted image. The encrypted image can then be decrypted back to the original image using the reverse algorithm.
+Geneix is a secure image encryption system that applies **DNA–RNA encoding techniques combined with chaotic systems** to protect digital images.
+The system performs **encryption and decryption of images using bio-inspired cryptographic operations** such as DNA encoding, RNA transcription, mutation, and chaotic sequence generation.
 
-The application is built with Python and Streamlit, providing an interactive web interface where users can upload images, perform encryption, and visually compare the original, encrypted, and decrypted images.
+This project provides a **Streamlit-based web interface** where users can upload images and securely encrypt and decrypt them in real time.
 
-🚀 Features
-🔒 DNA-RNA Inspired Encryption
+---
 
-Uses DNA encoding, RNA transcription, mutation, and translation techniques.
+## 🚀 Project Overview
 
-🧠 Chaotic Cryptography
+With the rapid growth of digital media and image sharing, ensuring **secure transmission and storage of images** has become essential. Traditional encryption methods are sometimes vulnerable to advanced attacks.
 
-Chaotic sequences generate unpredictable encryption keys.
+Geneix introduces a **bio-inspired encryption mechanism** that mimics biological DNA–RNA processes combined with chaotic maps to enhance security.
 
-🔁 Secure Image Decryption
+The system converts image pixels into binary sequences, applies **DNA encoding rules, RNA transcription, mutation, chaotic sequence generation, and RNA computing operations**, and finally reconstructs the encrypted image.
 
-Recovers the original image using reverse transformations.
+---
 
-🖼 Side-by-Side Image Comparison
+## ✨ Key Features
 
-Displays Original | Encrypted | Decrypted images.
+* 🔒 **Advanced Image Encryption using DNA–RNA Encoding**
+* 🧬 **Bio-inspired Cryptographic Model**
+* ⚡ **Chaotic Sequence Generation for High Security**
+* 🖼 **Multiple Image Upload Support**
+* 🔄 **Real-time Encryption and Decryption**
+* 📊 **Processing Time Measurement**
+* 🌐 **Interactive Streamlit Web Interface**
 
-⏱ Encryption Time Measurement
+---
 
-Shows processing time for encryption and decryption.
+## 🛠 Technologies Used
 
-🌐 Interactive Web Interface
+**Programming Language**
 
-Built using Streamlit for easy image upload and visualization.
+* Python
 
-🧬 Encryption Workflow
-The encryption process follows these stages:
+**Libraries & Frameworks**
 
-Image Upload & Preprocessing
+* Streamlit
+* NumPy
+* Pillow (PIL)
+* Matplotlib
+* Hashlib
 
-Convert image to RGB and resize.
+**Concepts Implemented**
 
-SHA-256 Hash Generation
+* DNA Encoding
+* RNA Transcription
+* RNA Mutation
+* Chaotic Systems
+* Image Bit Plane Processing
+* Cryptographic Hashing (SHA-256)
 
-A cryptographic hash is generated from image pixel values.
+---
 
-Chaotic Parameter Generation
+## 📂 Project Structure
 
-Chaotic maps generate unpredictable sequences.
-
-DNA Encoding
-
-Binary pixel data is converted into DNA bases (A, T, C, G).
-
-DNA Transcription
-
-DNA sequences are converted into RNA sequences.
-
-RNA Mutation
-
-Mutation rules modify RNA sequences using chaotic values.
-
-RNA Translation
-
-Transformed sequences introduce additional randomness.
-
-RNA Computing
-
-XOR-like operations are performed using RNA rules.
-
-Encrypted Image Generation
-
-The transformed sequences are converted back into pixel values.
-
-Decryption
-
-The reverse algorithm reconstructs the original image.
-
-🖥 Application Interface
-The application allows users to:
-
-Upload one or multiple images
-
-Encrypt images securely
-
-Decrypt encrypted images
-
-Compare results visually
-
-🛠 Technologies Used
-Python
-
-Streamlit
-
-NumPy
-
-Pillow (PIL)
-
-Matplotlib
-
-Hashlib
-
-📂 Project Structure
-Geneix-Image-Encryption
+```
+Geneix-Image-Security
 │
-├── app1.py
-├── README.md
-└── requirements.txt
-⚙ Installation
-Clone the repository:
+├── app.py                # Main Streamlit application
+├── encryption_module.py  # DNA-RNA encryption logic
+├── decryption_module.py  # Decryption algorithm
+├── requirements.txt      # Required dependencies
+└── README.md             # Project documentation
+```
 
-git clone https://github.com/your-username/geneix-image-encryption.git
-Navigate to the project folder:
+---
 
-cd geneix-image-encryption
-Install dependencies:
+## ⚙️ Encryption Workflow
 
+1. Image is uploaded through the Streamlit interface.
+2. The image is converted into **RGB bit planes**.
+3. SHA-256 hash is generated for additional security.
+4. DNA encoding rules convert binary data into DNA sequences.
+5. RNA transcription and mutation operations are applied.
+6. Chaotic sequences are generated using mathematical maps.
+7. RNA computing operations encrypt the image.
+8. The encrypted image is produced.
+
+---
+
+## 🔓 Decryption Workflow
+
+1. The encrypted matrix is processed using reverse RNA operations.
+2. Reverse mutation and transcription are applied.
+3. DNA decoding converts sequences back into binary format.
+4. Bit planes are reconstructed into pixel values.
+5. The **original image is recovered successfully**.
+
+---
+
+## ▶️ How to Run the Project
+
+### 1️⃣ Clone the Repository
+
+```
+git clone https://github.com/your-username/geneix-image-security.git
+```
+
+### 2️⃣ Navigate to the Project Directory
+
+```
+cd geneix-image-security
+```
+
+### 3️⃣ Install Dependencies
+
+```
 pip install -r requirements.txt
-▶ Run the Application
-Start the Streamlit server:
+```
 
-streamlit run app1.py
-The app will open in your browser:
+### 4️⃣ Run the Application
 
+```
+streamlit run app.py
+```
+
+### 5️⃣ Open in Browser
+
+```
 http://localhost:8501
-🔒 Security Approach
-The project combines multiple security techniques:
+```
 
-Cryptographic hashing (SHA-256)
+---
 
-Chaotic systems for randomness
+## 📸 Application Interface
 
-DNA encoding rules
+The system displays three images for each uploaded file:
 
-RNA mutation and translation
+* Original Image
+* Encrypted Image
+* Decrypted Image
 
-RNA computing operations
+This allows users to visually verify the encryption and recovery process.
 
-These layers create a highly complex encryption pipeline, making the system resistant to statistical and brute-force attacks.
+---
 
-📌 Future Improvements
-Faster encryption using optimized algorithms
+## 🔐 Security Advantages
 
-Support for larger image resolutions
+* High resistance to brute-force attacks
+* Chaotic key generation improves randomness
+* Bio-inspired encryption increases complexity
+* Pixel-level encryption improves security
 
-GPU acceleration
+---
 
-Video frame encryption
+## 🔮 Future Improvements
 
-👩‍💻 Author
-Developed as part of a project exploring bio-inspired cryptography and secure image processing techniques.
+* Deploy the system as a cloud application
+* Add video encryption support
+* Improve encryption speed using GPU acceleration
+* Implement additional chaotic encryption models
+
+---
+
+## 👩‍💻 Author
+
+**Shamili**
+
+Computer Science Graduate
+Interested in **Artificial Intelligence, Cybersecurity, and Machine Learning**
+
+GitHub: https://github.com/shamili-31
+
 
